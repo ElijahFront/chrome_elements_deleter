@@ -1,0 +1,16 @@
+.superExtraUniqueAndLongClassNameWithSomeSymbolsqqq{
+  animation-name: SuperFlashingAnimationWithALongName;
+  animation-duration: 400ms;
+  animation-iteration-count: 1;
+  animation-direction: alternate-reverse;
+  background-color: rgba(39, 149, 238, 0.24);
+}
+
+@keyframes SuperFlashingAnimationWithALongName {
+  from{
+    outline: none;
+  }
+  to{
+    outline: 3px solid blue
+  }
+}

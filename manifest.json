@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Elements remover",
+  "description": "This extension allowes you to delete elements from a webpage",
+  "version": "2.0",
+  "short_name":"Elements remover",
+  "author":"Ilya Smetanin",
+
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Delete elements"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ],
+  "content_scripts": [
+    {
+      "matches":["https://*/*", "http://*/*"],
+      "js": ["delete.js"],
+      "css":["index.css"]
+    }
+  ]
+}
